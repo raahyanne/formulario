@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: #666666;
+}
+
+.topo {
+    margin: 25px auto;
+    text-align: center;
+
+}
+
+.container {
+    margin: 15px auto;
+    padding: 10px;
+    width: 720px;
+    height: 1780px;
+    background: #e9e9e9;
+}
+
+.topo h1 {
+    font-size: 60px;
+    color: #E35260;
+    font-weight: 900;
+}
+
+.topo p {
+    font-size: 24px;
+    font-weight: 300;
+    color: #666666
+}
+
+.nome {
+    width: 620px;
+    height: 30px;
+    padding-left: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+.local, .nome_ponto, .contato, .online, .informacao, .funcionamento {
+    padding: 10px;
+}
+
+.local h2, .contato h2, .online h2, .informacao h2, .funcionamento h2 {
+    font-weight: 900;
+    font-size: 18px;
+    color: #E35260;
+}
+
+p {
+    margin: 12px 0;
+}
+
+.endereco, .bairro, .cidade, .estado {
+    padding-left: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+.endereco, .bairro, .cidade {
+    width: 310px;
+    height: 30px;
+}
+
+.estado {
+    margin: 0 5px;
+    width: 75px;
+    height: 30px;
+}
+
+.telefone, .whatsapp, .email, .site, .facebook, .instagram {
+    width: 310px;
+    height: 30px;
+    padding-left: 10px;
+    margin: 0px 5px;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.preenchimentoObrigatorio {
+    color: #E35260;
+    font-size: 24px;
+}
+
+.botao_imagem {
+    margin: 5px 0;
+    padding: 10px;
+    color: #ededed;
+    background: #E35260;
+    border: 1px solid #E35260;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 620px;
+    height: 120px;
+    resize: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 0px 5px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    background: #ffffff;
+}
+
+.bolinha {
+    width: 20px;
+    height: 20px;
+    margin: auto 12px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+}
+
+.funcionamento {
+    padding: 10px 15px;
+    margin: 10px 5px 20px;
+    background: #f8f8f8;
+    color: #212121;
+    display: flex;
+    align-items: right;
+}
+
+.caixa {
+    width: 20px;
+    height: 20px;
+    margin: auto 12px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 1px;
+}
+
+.hora {
+    margin: 5px;
+    width: 70px;
+    height: 30px;
+}
+
+.horario_funcionamento {
+    border-top: 2px solid #E35260;
+}
+
+.submit {
+    margin: 48px 10px;
+    width: 172px;
+    height: 56px;
+    padding: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 900;
+    background: #E35260;
+    border-radius: 8px; 
+}
+
+.reset {
+    margin: 48px 10px;
+    width: 172px;
+    height: 56px;
+    padding: 16px;
+    text-align: center;
+    color: #E35260;
+    font-weight: 900;
+    background: #FFFFFF;
+    border: 1px solid #E35260;
+    border-radius: 8px; 
+}
+
+.submit:hover, .reset:hover {
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+

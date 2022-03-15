@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Projeto Treveller</title>
+</head>
+<body>
+    <!-- Cabeçalho com título e subtítulo -->
+    <div class="topo">
+        <h1>Cadastro</h1>
+        <p>Preencha com as informações do Ponto Turístico</p>
+    </div>
+
+    <!-- Início do formulário -->
+    <div class="container">
+    <form action="" method="post" id="dados" name="dados">
+
+    <div class="nome_ponto">
+          <label for="nome">Nome do Ponto Turístico:</label><span class="preenchimentoObrigatorio">*</span><br>
+          <input type="text" id="nome" class="nome" placeholder="ex. Pinacoteca de São Paulo " required>
+    </div>
+   
+
+    <div class="local">
+        <h2>Localização:</h2>
+        <p>
+        <label for="address">Endereço: </label><span class="preenchimentoObrigatorio">*</span><br>
+        <input type="text" id="address" class="endereco" placeholder="ex. Praça da Luz, nº2" required>
+        </p>
+
+        <p>
+        <label for="bairro">Bairro: </label><span class="preenchimentoObrigatorio">*</span><br>
+        <input type="text" id="bairro" class="bairro" placeholder="ex. Bairro Luz" required>
+        </p>
+
+        <p>
+        <label for="city">Cidade: </label><span class="preenchimentoObrigatorio">*</span><br>
+        <input type="text" id="city" class="cidade" placeholder="ex. São Paulo" required>
+        </p>
+
+        <p>
+            <label for="estado">Estado</label><span class="preenchimentoObrigatorio">*</span>
+        <select id="estado" class="estado" required>
+            <option value="0">AC</option>
+            <option value="1">AL</option>
+            <option value="2">AP</option>
+            <option value="3">AM</option>
+            <option value="4">BA</option>
+            <option value="5">CE</option>
+            <option value="6">DF</option>
+            <option value="7">ES</option>
+            <option value="8">GO</option>
+            <option value="9">MA</option>
+            <option value="10">MG</option>
+            <option value="11">MS</option>
+            <option value="12">MT</option>
+            <option value="13">PA</option>
+            <option value="14">PB</option>
+            <option value="15">PE</option>
+            <option value="16">PI</option>
+            <option value="17">PR</option>
+            <option value="18">RJ</option>
+            <option value="19">RN</option>
+            <option value="20">RO</option>
+            <option value="21">RR</option>
+            <option value="22">RS</option>
+            <option value="23">SC</option>
+            <option value="24">SE</option>
+            <option value="25">SP</option>
+            <option value="26">TO</option>
+        </select>
+    </p>
+    </div>
+
+
+
+    <div class="contato">
+        <h2>Como entrar em contato?</h2>
+
+        <p>
+        <label for="tel">Telefone:</label>
+        <input type="number" id="tel" class="telefone" placeholder="ex. 11 45382068">
+        </p>
+
+        <p>
+        <label for="whatsapp">Whatsapp:</label>
+        <input type="number" id="whatsapp" class="whatsapp" placeholder="ex 11 967284598" >
+        </p>
+
+        <p>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" class="email" placeholder="ex. lugar@gmail.com">
+        </p>
+    </div>
+      
+
+
+
+    <div class="online">
+        <h2>Contato online:</h2>
+        
+        <p>
+        <label for="site">Site:</label>
+        <input type="url" id="site" class="site"  placeholder="URL do site">
+        </p>
+
+        <p>
+        <label for="facebook">Facebook:</label>
+        <input type="url" id="facebook" class="facebook" placeholder="Endereço do Facebook">
+        </p>
+
+        <p>
+        <label for="instagram">Instagram:</label>
+        <input type="text" id="instagram" class="instagram" placeholder="Usuário do Instagram">
+        </p>
+    </div>
+
+
+
+
+    <div class="informacao">
+        <h2>Informações:</h2>
+
+        <p>
+        <label for="imagem">Enviar Imagem</label><span class="preenchimentoObrigatorio">*</span><br>
+        <input type="file" id="imagem" class="botao_imagem"  name="imagem" multiple required>
+        </p>
+       
+        <p>Descrição:</p>
+        <textarea name="description" id="descrition" placeholder="O que encontrar?"></textarea>
+
+
+        <div class="estacionamento">
+        <p>Possui estacionamento?</p>
+        <input type="radio" id="sim" class="bolinha" name="fav_language" value="sim">
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="não" class="bolinha" name="fav_language" value="não">
+        <label for="não">Não</label>
+        </div>
+
+
+        <div class="lanche">
+        <p>Possui lanchonete ou cafeteria?</p>
+        <input type="radio" id="sim" class="bolinha" name="fav_language" value="sim">
+        <label for="sim">Sim</label><br>
+        <input type="radio" id="não" class="bolinha" name="fav_language" value="não">
+        <label for="nao">Não</label>
+        </div>
+
+
+        <div class="preco">
+        <p>Estimativa de preço:</p>
+        <input type="radio" id="barato" class="bolinha" name="fav_language" value="barato">
+        <label for="barato">$</label><br>
+        <input type="radio" id="medio" class="bolinha" name="fav_language" value="medio">
+        <label for="medio">$$</label><br>
+        <input type="radio" id="caro" class="bolinha" name="fav_language" value="caro">
+        <label for="caro">$$$</label><br>
+        <input type="radio" id="muitocaro" class="bolinha" name="fav_language" value="muitocaro">
+        <label for="muitocaro">$$$$</label>
+        </div>
+    </div>
+
+    <div class="funcionamento">
+
+        <h2>Funcionamento:</h2>
+
+
+<div class="data_hora">
+        <p>
+        <input type="checkbox" id="semana1" class="caixa" name="semana1" value="segunda">
+        <label for="vehicle1">Segunda-feira</label><br>
+        <input type="checkbox" id="semana2" class="caixa" name="semana2" value="terça">
+        <label for="vehicle2">Terça-feira</label><br>
+        <input type="checkbox" id="semana3" class="caixa" name="semana3" value="quarta">
+        <label for="vehicle3">Quarta-feira</label><br>
+        <input type="checkbox" id="semana4" class="caixa" name="semana4" value="quinta">
+        <label for="vehicle3">Quinta-feira</label><br>
+        <input type="checkbox" id="semana5" class="caixa" name="semana5" value="sexta">
+        <label for="vehicle3">Sexta-feira</label><br>
+        <input type="checkbox" id="semana6" class="caixa" name="semana6" value="sabado">
+        <label for="vehicle3">Sábado</label><br>
+        <input type="checkbox" id="semana7," class="caixa" name="semana7" value="domingo">
+        <label for="vehicle3">Domingo</label><br>
+        </p>
+
+        <div class="horario_funcionamento">
+        <p>
+        <label for="appt">Das:</label>
+        <input type="time" class="hora" id="appt" name="appt"><br>
+        <label for="appt">Até:</label>
+        <input type="time" class="hora" id="appt" name="appt"><br>
+        </p>
+        </div>
+</div>        
+
+    </div>
+
+    
+    <button type="submit" class="submit">Enviar</button>
+        
+    <button type="reset" class="reset">Cancelar</button>
+    
+
+</div>
+</form>
+
+</body>
+</html>
